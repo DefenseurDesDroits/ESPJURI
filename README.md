@@ -1,1 +1,1 @@
-[https://gitlab.com/defenseurdesdroits/ESPJURI/wikis/](Wiki)
+[Wiki](https://gitlab.com/defenseurdesdroits/ESPJURI/wikis/)
