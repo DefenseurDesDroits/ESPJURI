@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Accès à ESPJURI"
+AuthUserFile /path/to/.htpasswd
+Require valid-user
