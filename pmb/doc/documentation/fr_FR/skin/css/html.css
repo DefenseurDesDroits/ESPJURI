@@ -1,0 +1,96 @@
+/* ========== GENERAL HTML TAG SETUP ========== */
+html{
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-color: White;
+	font-family:sans-serif;
+	font-size: 14px;
+	overflow-y: scroll;
+	margin: 0px;
+	padding: 0px;
+	color: #535353;
+	line-height:1.2em;
+	background: #535353;
+	padding:20px 25px 10px 25px;
+}
+table{
+	border-collapse: collapse;
+	border-spacing: 0px;
+	font-family:sans-serif;
+	font-size: 14px;
+	color: #535353;
+	line-height:1.3em;
+}
+td{
+	padding: 0px;
+	margin: 0px;
+}
+p{
+	padding: 0px;
+	margin: 0.8em 0px;
+}
+a img{
+	border-width:0;
+}
+a {
+	color: #5f5f7c;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+a:visited{
+	color: #5f5f7c;
+}
+
+h1{
+	color: #444;
+	font-size: 1.2em;
+	margin:0.5em 0 15px 0px;
+	padding:10px 26px 4px 33px;
+	background:transparent url('../img/tpl/custom_pmb/fleur_b.png') no-repeat;
+	background-position: 0px -2px;
+}
+	h1 span {
+		display:block;
+		border-bottom:1px dotted #999;
+	}
+h2{
+	padding-top:5px;
+	margin-top:0px;
+	display:table;
+	font-size:1.2em;
+	color:#444;
+	font-weight: bold;
+	border-bottom:1px dotted #ddd;
+	margin-bottom:20px;
+}
+h3{
+	margin: 0.5em 0em;
+	font-size: 1.1em;
+	color: #8e8e8e;
+}
+h4{
+	margin: 0.5em 0em;
+	font-size: 1em;
+	color: #46436E;
+}
+h5{
+	margin: 0.5em 0em;
+	font-size: 1em;
+	color: #46436E;
+}
+h6{
+	margin: 0.5em 0em;
+	font-size: 1em;
+	color: #46436E;
+}
+
+/** rapprocher la liste du paragraphe precedent, souvent fortement lie semantiquement a cette liste **/
+ol, ul{
+	margin-top: 2px;
+	margin-left: 25px;
+	list-style-image: url('../img/tpl/custom_pmb/puce.png');
+}

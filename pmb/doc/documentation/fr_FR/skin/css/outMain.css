@@ -1,0 +1,99 @@
+ul.sw_outMain_navList,
+ul.sw_outMainML_navList{
+	list-style: none;
+	list-style-image:none;
+	margin: 0px;
+	padding:1px 29px 0 0;
+	height:112px;
+	float:right;
+	display: table;
+	z-index:1000;
+	position:relative;
+	background:transparent url('../img/tpl/custom_pmb/boutdeban.png')no-repeat top right;
+}
+
+ul.sw_outMain_navList li,
+ul.sw_outMainML_navList li{
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	height:20px;
+	color: #696989;
+	background-repeat: repeat-x;
+}
+ul.sw_outMain_navList li.mainSel_yes,
+ul.sw_outMainML_navList li.mainSel_yes {
+	background-color: white;
+	-moz-border-radius:5px;
+	color: #535353;
+}
+ul.sw_outMain_navList a,
+ul.sw_outMainML_navList a{
+	margin:0 4px;
+	-moz-border-radius:5px;
+	background:white;
+}
+	ul.sw_outMain_navList a:hover,
+	ul.sw_outMainML_navList a:hover{
+		color: #999;
+	}
+		color:#5a5a76;
+	ul.sw_outMain_navList a>span,
+	ul.sw_outMainML_navList a>span{
+		padding-right:4px;
+	}
+	
+
+ul.sw_outMain_navList .mainElt_entry,
+ul.sw_outMainML_navList .mainElt_entry {
+	height:16px;
+	display: block;
+	padding: 3px 7px 1px 3px;
+	font-weight: bold;
+}
+
+/* entry icons */
+ul.sw_outMain_navList .mainElt_entry span,
+ul.sw_outMainML_navList .mainElt_entry span {
+	background-repeat: no-repeat;
+	background-position: left;
+	padding-left: 15px;
+}
+
+ul.sw_outMain_navList li.toolGloss .mainElt_entry span,
+ul.sw_outMainML_navList li.toolGloss .mainElt_entry span{
+	background-image:url("../img/tpl/toolSel_no.png");
+}
+
+ul.sw_outMain_navList li.outMap .mainElt_entry span,
+ul.sw_outMainML_navList li.outMap .mainElt_entry span{
+	background-image:url("../img/tpl/guideMap.png");
+}
+ul.sw_outMain_navList li.outMap span.mainSel_yes span,
+ul.sw_outMainML_navList li.outMap span.mainSel_yes span{
+	background-image:url("../img/tpl/guideMap_yes.png");
+}
+
+
+ul.sw_outMain_navList li.outRoot .mainElt_entry span,
+ul.sw_outMainML_navList li.outRoot .mainElt_entry span{
+	background-image:url("../img/tpl/guideHome_no.png");
+	padding-left: 15px;
+}
+
+div.tplPage ul.sw_outMain_navList li.outRoot .mainElt_entry span,
+div.tplPage ul.sw_outMainML_navList li.outRoot .mainElt_entry span{
+	background-image:url("../img/tpl/guideHome.png");
+	padding-left: 15px;
+}
+ul.sw_outMain_navList li.outRoot .mainElt_entry span.tplGuideRet,
+ul.sw_outMainML_navList li.outRoot .mainElt_entry span.tplGuideRet{
+	background-image:url("../img/tpl/guideRet.png");
+	padding-left: 20px;
+}
+
+ul.sw_outMain_navList li.outRoot span.mainSel_yes span,
+ul.sw_outMainML_navList li.outRoot span.mainSel_yes span{
+	background-image:url("../img/tpl/guideHome.png");
+	padding-left: 15px;
+}

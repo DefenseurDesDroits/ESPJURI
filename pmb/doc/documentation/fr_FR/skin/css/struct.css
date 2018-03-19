@@ -1,0 +1,247 @@
+div#tplf{
+	position: relative;
+	min-width: 740px;
+	background:white;
+	-moz-border-radius-bottomleft:20px;
+	-moz-border-radius-bottomright:20px;
+	-webkit-border-bottom-left-radius:20px;
+	-webkit-border-bottom-right-radius:20px;
+	border-bottom-left-radius:20px;
+	border-bottom-right-radius:20px;
+}
+div#tplh{
+	position: relative;
+	height:112px;
+	background: transparent url('../img/tpl/custom_pmb/ban_fond.png') repeat-x;
+	cursor: default;
+	font-size: 13px;
+	line-height: normal;
+}
+div#tplh a{
+	text-decoration: none;
+}
+div#tplt{
+	position: absolute;
+	height:112px;
+	width:100%;
+	top:0px;
+	background-image:url("../img/tpl/custom_pmb/ban.png");
+	background-repeat: no-repeat;
+	line-height: normal;
+}
+div#tplt img{
+	/*
+	vertical-align: middle;
+	margin-top: 5px;
+	*/
+	display:none;
+}
+div.tplHomeTiFra td{
+	text-align: left;
+	padding: 5px;
+}
+div.tplHomeTiFra{
+	text-align: center;
+	padding-top: 40px;
+}
+div.tplHomeTiFra table {
+	width: 740px;
+	margin: 0px auto;
+}
+
+div.infoBk{
+}
+table.infoBkTa th{
+	text-align: right;
+	padding-right:6px;
+}
+
+span.tplTi{
+	position:absolute;
+	bottom:0px;
+	padding:2px 10px 2px 24px;
+	margin-left:200px;
+	display:table;
+	font-size: 13px;
+	font-weight: bold;
+	cursor: default;
+	color:#ff7702;
+	letter-spacing: 1px;
+	background:#fff url('../img/tpl/custom_pmb/fleur_o.png') no-repeat;
+	text-transform: uppercase;
+
+	-moz-border-radius-topleft:9px;
+	-moz-border-radius-topright:9px;
+	-webkit-border-top-left-radius:9px;
+	-webkit-border-top-right-radius:9px;
+	border-top-left-radius:9px;
+	border-top-right-radius:9px;
+}
+div.tplNav{
+	position: relative;
+	height:16px;
+	background: white url('../img/nav/fond_nav.png') repeat;
+	cursor: default;
+	line-height: normal;
+}
+
+div#tplc{
+	min-height:395px;
+	padding: 0px 10px 5px 16px;
+}
+
+div.tplc_out_yes{
+	margin-left:190px;
+}
+
+div.tplc_out_no{
+	margin-left:0px;
+}
+
+div.tplc_ctx_yes{
+	margin-right:210px;
+}
+div#tplo{
+	position: fixed;
+	top: 105px;
+	left: 0px;
+	background:url("../img/tpl/custom_pmb/fond_menu.png") repeat-y;
+	max-height: 500px;
+	min-height: 100px;
+	bottom:55px;
+	line-height: normal;
+	z-index:2000;
+	-moz-border-radius-topright:20px;
+	-moz-border-radius-bottomright:20px;
+	-webkit-border-top-right-radius:20px;
+	-webkit-border-bottom-right-radius:20px;
+	border-top-right-radius:20px;
+	border-bottom-right-radius:20px;
+}
+div.tplo_out_yes{
+	width: 217px;
+}
+div.tplo_out_no{
+	width: 16px;
+}
+
+div.tplOTp{
+	position: absolute;
+	width:100%;
+	height:100%;
+}
+div.tplOBm{
+	position: absolute;
+	width:100%;
+	height:100%;
+	background-image:url("../img/tpl/custom_pmb/menu_bas.png");
+	background-repeat: no-repeat;
+	background-position: bottom right;
+}
+
+div#tplx{
+	position: absolute;
+	top: 170px;
+	right: 10px;
+	width: 200px;
+	min-height: 190px;
+	padding-top:10px;
+	line-height: normal;
+}
+div#tplb{
+	position: relative;
+	height:20px;
+	cursor: default;
+	text-align: right;
+	padding: 20px 15px;
+	font-size:12px;
+	line-height: normal;
+}
+
+
+/* ========= Nav buttons ========= */ 
+a.navBack,
+a.navNext,
+a.navPrev{
+	height:16px;
+	display: block;
+}
+a.btnAbout:hover,
+a.navBack:hover,
+a.navNext:hover,
+a.navPrev:hover{
+	text-decoration: none;
+}
+a.navNext{
+	position: absolute;
+	right:0px;
+	top:7px;
+	background: url("../img/nav/navNext.png") top right no-repeat;
+}
+a.navNext:hover{
+	background-image:url("../img/nav/navNextHover.png");
+}
+a.navPrev,a.navBack{
+	position: absolute;
+	left:0px;
+	top:7px;
+	background:url("../img/nav/navPrev.png") top left no-repeat;
+}
+a.navPrev:hover{
+	background-image:url("../img/nav/navPrevHover.png");
+}
+a.navBack{
+	width:40px;
+	margin: 0px auto;
+}
+a.navBack span{
+	position: absolute;
+	top:-5000px;
+	left:-5000px;
+	overflow: hidden;
+	width:1px;
+	height:1px;
+	visibility: hidden;
+}
+a.navNext span,a.navPrev span{
+	visibility: hidden;
+}
+a.btnAbout{
+	display: block;
+	background-repeat: no-repeat;
+	-moz-opacity:0.7; 
+	filter:Alpha(opacity=70); 
+	opacity:0.7;
+	position: absolute;
+	left:15px;
+	background-image:url("../img/nav/navAbout.png");
+	background-position: top left;
+	height:10px;
+	display: block;
+	padding: 0px 0px 6px 18px;
+	color: #535353;
+}
+a.btnAbout:hover{
+	-moz-opacity:1; 
+	filter:Alpha(opacity=100); 
+	opacity:1;
+}
+
+
+.tplZoom ul.tpl_main_navList{
+	/* 
+	si jamais on trouve un cas ou ce bloc est non .hidden, 
+	j'aimerai en etre informe. Display none pour eviter une eventuelle surprise...
+	*/
+	display:none;
+}
+
+/* ========= Misc classes ========= */
+.hidden{
+	position: absolute;
+	top:-5000px;
+	left:-5000px;
+	overflow: hidden;
+	width:1px;
+	height:1px;
+}

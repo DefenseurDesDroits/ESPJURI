@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!DOCTYPE XMLlist SYSTEM "../XMLlist.dtd" [<!ENTITY nbsp "&amp;nbsp;">]>
+
+<!-- messages localisés en français pour l'OPAC de PMB
+$Id: fr_FR.xml,v 1.354.2.6 2014-11-18 11:30:51 arenou Exp $ -->
+
+<XMLlist>
+<entry code="cart_already_in"></entry>
+<entry code="cart_full"></entry>
+<entry code="cart_notice_exists"></entry>
+<entry code="cart_notice_add"></entry>
+<entry code="cart_contents">Panier (%s)</entry>
+<entry code="cart_empty">Panier (0)</entry>
+
+<entry code="actions_you_can"></entry>
+<entry code="actions_last_search">Modifier la recherche</entry>
+<entry code="actions_last_page">Derniers résultats de recherche</entry>
+<entry code="actions_history">Historique</entry>
+<entry code="actions_first_screen">Nouvelle recherche</entry>
+<entry code="empr_bt_show_compte"></entry>
+
+<entry code="facette_plus_link"><![CDATA[<span class="facette_plus">Plus</span>]]></entry>
+
+<entry code="notice_title_basket_exist">Notice ajoutée</entry>
+<entry code="avis_aucun">Aucun avis</entry>
+
+<entry code="simple_search_tpl_text">Vous pouvez lancer une recherche portant sur un ou plusieurs mots ; les « expressions exactes » doivent se mettre entre guillemets.</entry>
+<entry code="search_help"><![CDATA[Aide &agrave; la recherche]]></entry>
+<entry code="date_publication_or_annee_edition">Date</entry>
+<entry code="note_resume_query">Résumé</entry>
+<entry code="isbn_parent_query">Numéro de décision ou d'affaire de la notice mère</entry>
+<entry code="isbn_query">Numéro de décision ou d'affaire</entry>
+<entry code="code_start"><![CDATA[Numéro de décision ou d'affaire&nbsp;: ]]></entry>
+
+<entry code="110">Mots-clés</entry>
+<entry code="category">Mots-clé</entry>
+<entry code="categ_empty">mot-clé vide</entry>
+<entry code="categ_see_tpl_categ">Mots-clés</entry>
+<entry code="categories">Mots-clés</entry>
+<entry code="categories">Mots-clés</entry>
+<entry code="list_categories">des Mots-cléS</entry>
+<entry code="categs_found">Mots-clés trouvés pour la recherche</entry>
+<entry code="categories_start"><![CDATA[Mots-clés&nbsp;: ]]></entry>
+<entry code="categ_see_title">Ouvrages de la bibliothèque dans le mot-clé</entry>
+<entry code="navig_categ">avec les mots-clés</entry>
+<entry code="categ_see_alt">Voir les documents dans ce mot-clé...</entry>
+<entry code="term_already_in_use">Le mot-clé que vous avez sélectionné est déjà utilisé !</entry>
+<entry code="categories_search">Mots-clés</entry>
+<entry code="search_autopostage_multicritere">Mots-clés et sous-mots-clés</entry>
+<entry code="lib_categ">Libellé mot-clé</entry>
+<entry code="134">Mots-clés</entry>
+<entry code="cms_module_common_datasource_desc_descriptors">Tableau des identifiants des mots-clés</entry>
+<entry code="isbd_categories">Mot-clé</entry>
+<entry code="aut_link_categ">[Mot-clé] %1s</entry>
+<entry code="search_navigation_categ">Mots-clés</entry>
+
+<entry code="expr_bool_query">Contient</entry>
+
+</XMLlist>

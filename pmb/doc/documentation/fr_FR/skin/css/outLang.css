@@ -1,0 +1,82 @@
+ul.sw_outLang_navList a{
+	text-decoration: none;
+}
+ul.sw_outLang_navList {
+	position:absolute;
+	right:0px;
+	top:0px;
+	list-style: none;
+	list-style-image:none;
+	margin: 0px;
+	padding: 7px 10px 8px 10px;
+	height:15px;
+	background-image:url("../img/tpl/tplh_s.gif");
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+ul.sw_outLang_navList li{
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	width: 20px;
+	height:15px;
+	margin:0px 2px;
+}
+ul.sw_outLang_navList span {
+	position: absolute;
+	top:-5000px;
+	left:-5000px;
+	overflow: hidden;
+	width:1px;
+	height:1px;
+}
+ul.sw_outLang_navList a {
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 16px;
+	height:11px;
+	border : 2px solid transparent;
+}
+ul.sw_outLang_navList a.outLangSel_yes {
+	border-color: #f3e835;
+}
+ul.sw_outLang_navList a:hover {
+	border-color: white;
+}
+.mnuLangCde_de {
+	background-image:url("../img/flags/de.gif");
+}
+.mnuLangCde_el {
+	background-image:url("../img/flags/el.gif");
+}
+.mnuLangCde_en {
+	background-image:url("../img/flags/en.gif");
+}
+.mnuLangCde_es {
+	background-image:url("../img/flags/es.gif");
+}
+.mnuLangCde_fr {
+	background-image:url("../img/flags/fr.gif");
+}
+.mnuLangCde_it {
+	background-image:url("../img/flags/it.gif");
+}
+.mnuLangCde_ja {
+	background-image:url("../img/flags/jp.gif");
+}
+.mnuLangCde_nl {
+	background-image:url("../img/flags/nl.gif");
+}
+.mnuLangCde_pt {
+	background-image:url("../img/flags/pt.gif");
+}
+.mnuLangCde_pt-BR {
+	background-image:url("../img/flags/br.gif");
+}
+.mnuLangCde_ru {
+	background-image:url("../img/flags/ru.gif");
+}
+.mnuLangCde_zh {
+	background-image:url("../img/flags/cn.gif");
+}
