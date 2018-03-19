@@ -1,0 +1,97 @@
+
+/*****************************************************************************************
+	Note explicative
+
+	Les contenus decrits ici ont pour but de renseigner les parametres
+	dans la partie gestion de l'opac PMB. Les valeurs sont a renseigner 
+	suivant les directives #obligatoire #recommande...
+
+	Il est possible que certains parametres non decrits ci-dessous n'aient pas l'affichage 
+	souhaite, auquel cas il vous faudra contacter le realisateur de cette charte pour
+	implementer le parametre en question.
+	
+	Une sauvegarde des valeurs est toujours souhaitee avant modification, 
+	communement en collant le contenu du champ "Valeur" dans le champ "Explication"
+	
+*****************************************************************************************/
+
+
+/*********************************
+      biblio_preamble_p1
+            logo
+*********************************/
+<h2>Actualités</h2>
+<ul>
+<li><h4>Printemps des poètes</h4>
+<img src="./styles/enfant/images/printemps.jpg" />
+Du 6 au 24 mars grand
+accrochage de poèmes dans les espaces de la médiathèque.</li>
+
+<li><h4>Faiseurs de mots</h4>
+Venez écouter les D'moiselles le mardi 13 mars à 18h30 à la médiathèque.
+
+Deux D'moiselles rêvent du prince charmant. En attendant, elles patientent dans les bras de piteux amants. Entre dialogues poétiques et chansons, ritournelles et accordéons, elles nous racontent, avec humour et légèreté, leurs joies et déboires sentimentaux.
+
+Tout public.</li>
+</ul>
+
+
+/*********************************
+      biblio_preamble_p2
+*********************************/
+<ul>
+<li><a href="./index.php?lvl=infopages&pagesid=">Plus d'actualités</a></li>
+<li><a href="./index.php?lvl=infopages&pagesid=">Le coups de coeur de la semaine</a></li>
+<li><a href="./index.php?lvl=infopages&pagesid=">...à propos</a></li>
+</ul>
+
+
+/*********************************
+      biblio_main_header
+*********************************/
+<!-- jQuery library -->
+<script type="text/javascript" src="./includes/javascript/jquery/jquery-1.4.4.min.js"></script>
+<!-- bxSlider library -->
+<script type="text/javascript" src="./includes/javascript/jquery/jquery.bxSlider.min.js"></script>
+<!-- library -->
+<script type="text/javascript" src="./includes/javascript/jquery/enfant.js"></script>
+
+<link href="http://fonts.googleapis.com/css?family=Maven+Pro:400,500,700" rel="stylesheet">
+
+<div id="toolbar">
+<a target="_blank" href="./index.php?lvl=infopages&pagesid=">Le règlement</a>
+ | <a target="_blank" href="mailto:pmb@sigb.net?subject=Demande d'information&body=Bonjour,">Contacte ta bibliothèque</a>
+</div>
+
+<div id="menu">
+<ul>
+<li><a id="btn_accueil" href="./index.php">Accueil<span></span></a></li>
+
+<li><a id="btn_rechercher" href="./index.php">Rechercher<span></span></a></li>
+
+<li><a id="btn_historique" href="./index.php?lvl=search_history">Historique<span></span></a></li>
+
+<li><a id="btn_panier" href="./index.php?lvl=show_cart">Panier<span></span></a></li>
+
+<li><a id="btn_compte" href="./empr.php">Compte<span></span></a></li>
+
+<li><a id="btn_connect" href="./index.php?logout=1">Déconnexion<span></span></a></li>
+
+</ul>
+</div>
+
+
+/*********************************
+      lien_bas_supplementaire
+*********************************/
+
+
+/*********************************
+        infopage carrousel
+*********************************/
+<div id="infopage_carrousel">
+<h3><span>Nouveaut&eacute;s</span></h3>
+<a id="plus_ouvrages" href="http://corbeny.bibli.fr/opac/index.php?lvl=etagere_see&amp;id=1">&gt; Voir tous les ouvrages</a>
+</div>
+
+

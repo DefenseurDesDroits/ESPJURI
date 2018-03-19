@@ -1,0 +1,19 @@
+/* +--------------------------------------------------------------------------+
+// 2013 PMB Services / www.sigb.net pmb@sigb.net et contributeurs (voir www.sigb.net)
+// +-------------------------------------------------+
+// $Id: home.css,v 1.1.2.1 2016-11-02 09:10:02 wlair Exp $ */
+
+/*------------------------------------------------------------------------------------------*/
+
+#main,
+#main_hors_footer{
+	background-color: transparent;
+}
+
+#main_hors_footer {
+	border: solid 0px #dedede;
+	box-shadow: none;
+	background-color: transparent;
+	padding: 0;
+	margin-bottom: 0;
+}

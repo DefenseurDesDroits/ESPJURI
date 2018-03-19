@@ -1,0 +1,118 @@
+{% extends 'record_extended_display.tpl.html' %}
+
+<!-- $Id: record_extended_display_a.tpl.html,v 1.3.2.12 2016-11-04 10:56:32 cgil Exp $ -->
+
+{% block record_content %}
+	<table class="descr_notice">
+		<tbody>
+		    {% block record_tit1 %}
+   				<tr class="record_tit1">
+					<td class="labelNot">
+						<span>{{ msg.tit1display_start }}</span>
+					</td>
+					<td class="labelContent">
+						<span id="exempl_titleNot">{{ record.tit1 }}{% if record.tit4 %} : {{record.tit4}}{% endif %} {% if record.year %}({{ record.year }}){% endif %}</span>
+					</td>
+				</tr>
+		    {% endblock %}
+		    
+		    {% block record_tit3 %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_relations_up %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_responsabilites %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_tdoc %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_mention %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_bul_info %}
+				{% if record.bul_info.bulletin_id %}
+					<tr class="record_bul_info">
+						<td class="labelNot">
+							<span>{{ msg.dans_start }} :</span> <!-- Titre du periodique-->
+						</td>
+						<td class="labelContent">
+							<span><a href="{{ record.liens_opac.lien_rech_bulletin | replace '!!id!!' record.bul_info.bulletin_id }}" title="{{ record.bul_info.title }} ({{ record.bul_info.numero }} {{ record.bul_info.date }})">{{ record.bul_info.title }} ({{ record.bul_info.numero }} {{ record.bul_info.date }})</a></span>
+						</td>
+					</tr>
+				{% endif %}
+			{% endblock %}
+			
+			{% block record_npages %}
+					{% if record.npages %}
+						<tr class="record_npages">
+							<td class="labelNot">
+									<span>{{ msg.npages_start_perio }}</span>				
+							</td>
+							<td class="labelContent">
+								<span>{{record.npages}}</span>
+							</td>
+						</tr>
+				{% endif %}
+			{% endblock %}
+			
+			{% block record_titre_uniforme %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_n_gen %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_langues %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_langues_org %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_concepts %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_indexint %}
+				{{block.super}}
+			{% endblock %}
+						
+			{% block record_categories %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_motes_cles %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_resume %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_contenu %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_p_perso %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_lien %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_relations_down %}
+				{{block.super}}
+			{% endblock %}
+		</tbody>
+	</table>
+{% endblock record_content %}

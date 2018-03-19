@@ -1,0 +1,22 @@
+{% extends 'gabarit.html' %}
+
+<!-- $Id: serie.html,v 1.1.2.1 2016-05-11 16:01:21 dgoron Exp $ -->
+
+{% block header %}
+	<h3><span>{{ msg.serie_see_title }}</span></h3>
+{% endblock %}
+
+{% block aut_see %}
+	<div class="serielevel2">
+		{{ block.super }}
+	</div>
+{% endblock %}
+	
+{% block title %}
+	<h3>
+		{{ authority.name }}
+	</h3>
+{% endblock %} 
+
+{% block details %}
+{% endblock %}

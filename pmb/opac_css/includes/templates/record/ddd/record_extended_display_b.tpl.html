@@ -1,0 +1,155 @@
+{% extends 'record_extended_display.tpl.html' %}
+
+<!-- $Id: record_extended_display_b.tpl.html,v 1.2.2.14 2017-02-21 14:33:15 cgil Exp $ -->
+
+{% block record_content %}
+	<table class="descr_notice">
+		<tbody>
+			{% block record_tit1 %}
+				<tr class="record_tit1">
+					<td class="labelNot">
+						<span>{{ msg.tit1display_start }}</span>
+					</td>
+					<td class="labelContent">
+						<span id="exempl_titleNot">
+							<a href="{{ record.liens_opac.lien_rech_notice | replace '!!id!!' record.bul_info.id }}" title="{{ record.bul_info.title }}">{{ record.bul_info.title }}</a>, {{ record.tit1 }}{% if record.tit4 %} : {{record.tit4}}{% endif %}
+						</span>
+					</td>
+				</tr>
+			{% endblock %}
+			
+		    {% block record_tit3 %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_relations_up %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_responsabilites %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_tdoc %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_mention %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_bul_info %}
+				{% if record.bul_info.aff_date_date %}
+					<tr class="record_bul_info">
+						<td class="labelNot">
+							<span>{{ msg.bull_date_date }}</span> <!-- Paru le -->
+						</td>
+						<td class="labelContent">
+							<span>{{ record.bul_info.aff_date_date }}</span>
+						</td>
+					</tr>
+				{% endif %}
+			{% endblock %}
+			
+			{% block record_titre_uniforme %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_publishers %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_collection %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_subcollection %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_code %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_size %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_accomp %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_n_gen %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_langues %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_langues_org %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_concepts %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_indexint %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_categories %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_motes_cles %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_resume %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_contenu %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_p_perso %}
+				{{block.super}}
+			{% endblock %}
+			
+			{% block record_lien %}
+			   {{block.super}}
+			{% endblock %}
+			
+			{% block record_relations_down %}
+				{{block.super}}
+			{% endblock %}
+			
+		</tbody>
+	</table>
+{% endblock record_content %}
+
+{% block articles %}
+	<!-- Depouillements -->
+	{% for article in record.articles %}
+		{% if loop.first %}
+			<div id="zone_depouillements">
+				<h3>
+					<span id="titre_depouillements">{{ msg.bull_dep }}</span>
+				</h3>
+				{% if global.opac_cart_only_for_subscriber == "1" %}
+				      {% if session_vars.id_empr %}
+					      <a href="cart_info.php?id={{record.bul_info.bulletin_id}}&lvl=analysis" target="cart_info" title="{{msg.cart_add_result_in}}">{{msg.cart_add_result_in}}</a>
+				      {% endif %}
+				{% else %}
+				      <a href="cart_info.php?id={{record.bul_info.bulletin_id}}&lvl=analysis" target="cart_info" title="{{msg.cart_add_result_in}}">{{msg.cart_add_result_in}}</a>
+				{% endif %}
+		{% endif %}
+		{{ article }}
+		{% if loop.last %}
+			</div>
+		{% endif %}
+	{% endfor %}
+{% endblock articles %}

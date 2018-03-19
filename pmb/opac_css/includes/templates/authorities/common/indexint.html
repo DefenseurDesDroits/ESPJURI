@@ -1,0 +1,28 @@
+{% extends 'gabarit.html' %}
+
+<!-- $Id: indexint.html,v 1.1.2.2 2016-05-11 16:01:21 dgoron Exp $ -->
+
+{% block header %}
+	<h3><span>{{ msg.detail_indexint }}</span></h3>
+{% endblock %}
+
+{% block aut_see %}
+	<div class="indexintlevel2">
+		{{block.super}}
+	</div>
+{% endblock %}
+	
+{% block title %}
+	<h3>
+		{{ authority.name }}
+		{% if authority.comment %}
+			: {{ authority.comment }}
+		{% endif %}
+	</h3>
+{% endblock %} 
+
+{% block details %}
+	{% if authority.has_child %}
+		{{ authority.child_list }}
+	{% endif %}
+{% endblock %}

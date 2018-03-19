@@ -1,0 +1,1885 @@
+/* +--------------------------------------------------------------------------+
+// 2012 PMB Services / www.sigb.net pmb@sigb.net et contributeurs (voir www.sigb.net)
+// +-------------------------------------------------+
+// $Id: enfant.css,v 1.7 2012-05-16 07:55:19 trenon Exp $ */
+
+
+/* ---------------------------------------------------------------------------*/
+/* ---------------------------------------------------------------------------*/
+/*                         ATTRIBUTS GENERAUX                                 */
+/* ---------------------------------------------------------------------------*/
+/* ---------------------------------------------------------------------------*/
+
+
+@font-face {
+	font-family: RAVIE;
+	src: url('RAVIE.TTF');
+}
+
+* {
+	margin: 0px;
+	padding: 0px;	
+}
+
+body {
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 12px;
+	color: #444444;
+}
+
+hr {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	display: block;
+	height: 1px;
+	border-top: 1px solid #e2e2e2;
+}
+	
+img {
+	border: none;
+}
+
+.div_clr, #search_crl {
+	clear: both;
+}
+	
+	
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                                         TITRES                                             */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */   
+	
+	
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 500;
+	line-height: 120%;
+}
+
+
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                                          LIENS                                             */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */    
+	
+a {
+	color: #ff8d22;
+	text-decoration: none;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+	color: #1C6AB4;
+}
+
+
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                                        TABLEAUX                                            */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+
+table {
+	border: none;
+	border-collapse: collapse;
+}
+
+td, th {
+	text-align: left;
+	vertical-align: top;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+th {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #FF8D22;
+}
+
+
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                                 LAYOUT : BLOCS PRINCIPAUX                                  */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */
+
+	
+body#pmbopac {
+	background-image: url("images/fond.jpg");
+	background-repeat: repeat-x;
+	background-position: center top;
+	background-color: #ffffff;
+}
+
+
+#container {
+	width: 985px;
+	margin: 0 auto;
+}
+
+	#main {
+		width: 765px;
+		float: left;
+	}
+
+		#main_header {
+			width: 985px;
+			height: 177px;
+		}
+			
+			#toolbar {
+				width: 300px;
+				padding-top: 5px;
+				margin-left: 680px;
+				text-align: right;
+				color: #BBBBBB;
+			}
+			
+			#toolbar a {
+				color: #FFFFFF;
+			}
+			
+			#toolbar a:hover {
+				-moz-text-shadow: 0px 0px 1px #FFFFFF;
+				-webkit-text-shadow: 0px 0px 1px #FFFFFF;
+				text-shadow: 0px 0px 1px #FFFFFF;
+			}
+				
+							
+		#main_hors_footer {
+			/*min-height: 700px;  à activer si le bandeau apparaît dans la charte pour pas qu'il ne passe sous le #main_hors_footer */
+			margin-right: 20px;
+			margin-top: 23px;
+			border: 1px solid #CCC;
+			background-color: #FFFFFF;
+			padding: 15px;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-radius: 10px;
+			box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+			-webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+			-moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+		}
+
+		#footer {
+			display: none;
+		}
+
+
+	#intro {
+		width: 215px;
+		float: right;
+		margin-top: 200px;
+		border: 1px solid #CCCCCC;
+		background-color: #FFFFFF;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+		-webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+		-moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+		box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+	}
+		
+		#intro h3 {
+			display: none;
+		}
+		
+		#intro .p1 h2 {
+			background-image: url("images/actu.jpg");
+			background-repeat: no-repeat;
+			background-position: left top;
+			height: 60px;
+   			line-height: 50px;
+    		text-align: center;
+    		color: #ffffff;
+    		font-family: RAVIE;
+    		font-weight: 300;
+    		font-size: 16px;
+    		-webkit-border-top-left-radius: 10px;
+    		-webkit-border-top-right-radius: 10px;
+			-moz-border-radius-topleft: 10px;
+			-moz-border-radius-topright: 6px;
+			border-top-left-radius: 10px;
+    		border-top-right-radius: 10px;
+    		-webkit-text-shadow: 1px 1px 1px #333333;
+			-moz-text-shadow: 1px 1px 1px #333333;
+			text-shadow: 1px 1px 1px #333333;
+		}
+		
+		#intro .p1 ul {
+			margin-left: 15px;
+			margin-right: 15px;
+			list-style: none;
+		}
+		
+		#intro .p1 ul li {
+			margin-bottom: 10px;
+			padding-bottom: 15px;
+			border-bottom: 1px dashed #c81f76;
+		}
+		
+		#intro .p1 ul h4 {
+			margin-left: -15px;
+			padding-left: 15px;
+			background-image: url("images/puce.jpg");
+			background-repeat: no-repeat;
+			background-position: left top;
+			padding-bottom: 3px;
+			padding-top: 3px;
+			font-size: 13px;
+			color: #c81f76;
+		}
+		
+		#intro .p1 img {
+			text-align: center;
+			max-width: 183px;
+		}
+		
+		#intro .p2 ul {
+			margin-bottom: 15px;
+			margin-left: 15px;
+			margin-right: 15px;
+			list-style: none;
+		}
+			
+		#intro .p2 ul li {
+			margin-bottom: 5px;
+		}
+			
+		#intro .p2 ul li a {
+			background-image: url("images/list-blue.png");
+			background-repeat: no-repeat;
+			background-position: 0px 50%;
+			padding-left: 20px;
+			display: block;
+		}
+			
+		#intro .p2 ul li a:hover {
+			background-image: url("images/list-red.png");
+			background-repeat: no-repeat;
+			background-position: 0px 50%;
+		}	
+	
+			
+	#bandeau {
+		float: right;
+		margin-bottom: 20px;
+		line-height: 130%;
+	}
+		
+		#accueil, #connexion, #facette, #adresse, #post_adress, #meteo {
+			width: 185px;
+			margin-top: 20px;
+			border: 1px solid #CCCCCC;
+			background-color: #FFFFFF;
+			padding-left: 15px;
+			padding-right: 15px;
+			padding-bottom: 15px;
+			padding-top: 15px;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-radius: 10px;
+			-webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+			-moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+			box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+		}
+		
+		#bandeau h3 {
+			font-size: 13pt;
+			margin-left: -15px;
+			margin-bottom: 5px;
+			padding-left: 15px;
+			color: #C81F76;
+			-moz-text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+			-webkit-text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+			text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+		}
+		
+		#accueil h3, #accueil p.centered {
+			display: none;
+		}
+	
+	
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                                     MENU PERSONNALISE                                      */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */
+
+#menu {
+	margin-top: 102px;
+}
+
+#menu ul {
+	list-style: none;
+}
+					
+	#menu ul li {
+		float: left;
+		display: block;
+		font-size: 15px;
+		margin-right: 2px;
+	}
+		
+	#menu ul li a {
+		display: block;
+		height: 55px;
+		line-height: 48px;
+		padding-left: 28px;
+		padding-right: 28px;
+		color: #FFFFFF;
+		text-transform: uppercase;
+		-moz-text-shadow: 0px 1px 1px rgba(0,0,0,0.6);
+		-webkit-text-shadow: 0px 1px 1px rgba(0,0,0,0.6);
+		text-shadow: 0px 1px 1px rgba(0,0,0,0.6);
+		-moz-border-radius-topleft: 10px;
+		-moz-border-radius-topright: 10px;
+		-webkit-border-top-left-radius: 10px;
+		-webkit-border-top-right-radius: 10px;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		font-family: RAVIE;
+	}
+	
+	#menu ul li a#btn_accueil {
+		background-repeat: repeat-x;
+		background-image: url("images/btn_accueil.jpg");
+		background-position: left bottom;
+	}
+	
+	#menu ul li a#btn_accueil span {
+		background-position: -40px bottom;
+		margin-top: -115px;
+	}
+	
+	#menu ul li a#btn_rechercher {
+		background-repeat: repeat-x;
+		background-image: url("images/btn_rechercher.jpg");
+		background-position: left bottom;
+	}
+	
+	#menu ul li a#btn_rechercher span {
+		background-position: -185px bottom;
+		margin-top: -120px;
+	}
+	
+	#menu ul li a#btn_historique {
+		background-repeat: repeat-x;
+		background-image: url("images/btn_historique.jpg");
+		background-position: left bottom;
+	}
+	
+	#menu ul li a#btn_historique span {
+		background-position: -365px bottom;
+		margin-top: -125px;
+	}
+	
+	#menu ul li a#btn_panier {
+		background-repeat: repeat-x;
+		background-image: url("images/btn_panier.jpg");
+		background-position: left bottom;
+	}
+	
+	#menu ul li a#btn_panier span {
+		background-position: -551px bottom;
+		margin-top: -120px;
+	}
+	
+	#menu ul li a#btn_compte {
+		background-repeat: repeat-x;
+		background-image: url("images/btn_compte.jpg");
+		background-position: left bottom;
+	}
+	
+	#menu ul li a#btn_compte span {
+		background-position: -720px bottom;
+		margin-top: -120px;
+	}
+	
+	#menu ul li a#btn_connect {
+		background-repeat: repeat-x;
+		background-image: url("images/btn_deconnexion.jpg");
+		background-position: left bottom;
+		margin-right: 0px;
+	}
+	
+	#menu ul li a#btn_connect span {
+		background-position: -865px bottom;
+		margin-top: -120px;
+	}
+	
+	#menu ul li a:hover {
+		-moz-text-shadow: 0px 0px 1px #ffffff;
+		-webkit-text-shadow: 0px 0px 1px #ffffff;
+		text-shadow: 0px 0px 1px #ffffff;
+	}
+	
+	#menu ul li a span {
+		background-repeat: no-repeat;
+		background-image: url("images/pictos.png");
+		height: 90px;
+		display: none;
+		position: relative;
+		z-index: -1;
+	}
+	
+	#menu ul li a:hover span {
+		display: block;
+	}
+		
+		#menu ul li ul {
+			position: absolute;
+			width: 235px;
+			left: -999em;
+			margin-top: 46px;
+			background-color: #FFFFFF;
+			border: 1px solid #CCCCCC;
+			-moz-border-radius-topleft: 0px;
+			-moz-border-radius-topright: 0px;
+			-moz-border-radius-bottomright: 4px;
+			-moz-border-radius-bottomleft: 4px;
+			-webkit-border-radius: 0px 0px 4px 4px;
+			border-radius: 0px 0px 4px 4px;
+			-webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+			-moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+			box-shadow: 0px 1px 2px rgba(0,0,0,0.08);
+			padding: 2px 0;
+			z-index: 999999;
+		}
+			
+			#menu ul li ul li {
+				font-size: 11pt;
+				width: 100%;
+				float: none;
+			}
+				
+			#menu ul li ul li a {
+				display: block;
+				width: 205px;
+				height: 35px;
+				line-height: 35px;
+				color: #555555;
+				text-shadow: none;
+				background-position: 0px 100%;
+			}
+				
+			#menu ul li ul li.last a {
+				background-image: none;
+			}
+				
+			#menu ul li ul li a:hover {
+				color: #47A3B7;
+			}
+				
+			#menu li:hover ul {
+				left: auto; /* Repositionnement normal */
+				min-height: 0; /* Corrige un bug sous IE */
+			}   
+   
+ 
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                                           PANIER                                           */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */ 
+
+/* FRAME */
+   
+iframe#iframe_resume_panier {
+	position: absolute;
+	width: 660px;
+	top: 5px;
+	height: 20px;
+	margin-left: -10px;
+}
+	
+body.cart_info_body {
+	color: #ffffff;
+	background-color: transparent;
+}
+	
+span#cart_info_iframe_content {
+	font-size: 10pt;
+}
+
+span.img_basket {
+	vertical-align: top;
+}
+  
+span#cart_info_iframe_content a:hover {
+	color: #ffffff;
+	-moz-text-shadow: 0px 0px 1px #FFFFFF;
+	-webkit-text-shadow: 0px 0px 1px #FFFFFF;
+	text-shadow: 0px 0px 1px #FFFFFF;
+}
+
+/* AFFICHAGE DU CONTENU */
+
+div#cart_action form {
+	margin: 20px 0 30px 0;
+}
+
+
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                   PAGE D'ACCUEIL : CARACTERISTIQUES COMMUNES DES BLOCS                     */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */ 
+
+#search, #categories,  #last_entries, #location, #etageres { 
+	display: block;
+	clear: both;
+	margin-top: 20px;
+}
+	
+#search h3, #infopage_carrousel h3, #categories h3, #last_entries h3, #location h3, #etageres h3 {
+	font-size: 14px;
+	font-weight: 400;
+	font-family: RAVIE;
+	color: #ffffff;
+	-webkit-text-shadow: 1px 1px 1px #333333;
+	-moz-text-shadow: 1px 1px 1px #333333;
+	text-shadow: 1px 1px 1px #333333;
+}
+	
+
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                        INFOPAGE CARROUSEL => voir bx_styles.css                            */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+
+
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                                          NAVIGATEUR                                        */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */ 
+
+#navigator {
+	margin-bottom: 30px;
+	padding: 5px 0 10px 0;
+	border-top: 1px dotted #CCCCCC;
+	border-bottom: 1px dotted #CCCCCC;
+	line-height: 120%;
+}
+
+#navigator strong {
+	font-weight: 400;
+	font-size: 10pt;
+}
+	
+#navigator table td {
+	font-size: 10pt;
+	padding-left: 0;
+    padding-right: 7px;
+}
+
+
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                                      RECHERCHE SIMPLE                                      */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+	
+#search {
+	background-image: url("images/search.jpg");
+	background-repeat: repeat-x;
+	background-position: left top;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin-top: 40px;
+}
+
+#search ul.search_tabs {
+	list-style: none;
+	position: absolute;
+	margin-top: -33px;
+	background-repeat: no-repeat;
+	background-image: url("images/recherchesimple_next.jpg");
+	background-position: 180px top;
+	width: 330px;
+	height: 33px;
+}
+	
+#search ul.search_tabs li, #search ul.search_tabs li a {
+	display: none;
+}
+
+#search ul.search_tabs li#current {
+	font-size: 14px;
+	font-weight: 400;
+	font-family: RAVIE;
+	color: #ffffff;
+	-webkit-text-shadow: 1px 1px 1px #333333;
+	-moz-text-shadow: 1px 1px 1px #333333;
+	text-shadow: 1px 1px 1px #333333;
+	background-repeat: repeat-x;
+	background-image: url("images/recherchesimple.jpg");
+	background-position: left top;
+	display: block;
+    padding-bottom: 11px;
+    padding-top: 5px;
+    margin-left: 10px;
+    text-align: center;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 180px;
+}
+
+#search .p1 {
+	display: none;
+}
+
+#search form {
+	background-image: url("images/loupe.png");
+	background-repeat: no-repeat;
+	background-position: 10px 5px;
+    padding-left: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#search form br {
+	display: none;
+}
+
+#search form .text_query {
+	width: 425px;
+}
+
+
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                                  RESULTATS DE RECHERCHE                                    */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */
+
+/* DECOMPTE DES RESULTATS PAR CHAMPS */
+   
+#search_result {
+	margin-top: 20px;
+}
+
+#search_result #auteur blockquote, #search_result #categorie blockquote {
+	margin: 10px 0 10px 20px;
+	font-weight: 400;
+	font-size: 10pt;
+}	
+	
+#search_result #auteur blockquote strong, #search_result #categorie blockquote strong {
+	font-weight: 400;
+}
+
+/* LISTE DES NOTICES SUR LA PREMIERE PAGE */
+
+#res_first_page {
+	margin-top: 30px;
+}
+
+/* AFFICHAGE DES RESULTATS */ 
+	
+img#sort_icon {
+	margin-right: 10px;
+	margin-bottom: 0px;
+}	
+	
+/* RESULTATS : CATEGORIES */	
+
+#resultatrech h3 {
+	font-size: 17px;
+	font-weight: 500;
+}
+
+ul#search_tabs {
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+#search_tabs li {
+	display: inline-block;
+}
+
+#search_tabs li a {
+	display: block;
+	cursor: pointer;
+	color: #555555;
+	padding: 4px 10px 4px 10px;
+	border: 1px solid #d9d9d9;
+	border-bottom-color: #bfbfbf;
+	-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+	-moz-text-shadow: 0 1px 0 rgba(255,255,255,1.0);
+	-webkit-text-shadow: 0 1px 0 rgba(255,255,255,1.0);
+	text-shadow: 0 1px 0 rgba(255,255,255,1.0);
+	text-transform: uppercase;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-size: 11px;
+}
+	
+#search_tabs li a:hover {
+	border-color: #cfcfcf;
+	border-top-color: #BBBBBB;
+	-moz-box-shadow: 0px 1px 1px rgba(5,5,5,0.1) inset;
+	-webkit-box-shadow: 0px 1px 1px rgba(5,5,5,0.1) inset;
+	box-shadow: 0px 1px 1px rgba(5,5,5,0.1) inset;
+}
+
+#search_tabs li.current a {
+	border-color: #cfcfcf;
+	color: #444444;
+	border-top-color: #BBBBBB;
+	-moz-box-shadow: 0px 0px 5px #cccccc inset;
+	-webkit-box-shadow: 0px 0px 5px #cccccc inset;
+	box-shadow: 0px 0px 5px #cccccc inset;
+}
+
+#resultatrech_liste a {
+	
+}
+
+#resultatrech_liste li {
+	list-style: none;
+	background-image: none;
+	padding-left: 40px;
+}
+	
+#resultatrech_liste ul li {
+	list-style: none;
+	background-image: url("images/list.png");
+	background-repeat: no-repeat;
+	background-position: 0px -4px;
+	padding-left: 20px;
+}
+	
+	
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                                        TRI DES NOTICES                                     */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */
+
+#tris h3 {
+	margin-top: 0px;
+}
+
+#tris {
+	width: 100%;
+}   
+
+#tris table td {
+	padding-top: 15px;
+}
+
+#tris table td table td {
+	padding-top: 0px;
+}
+
+#tris table td br {
+	display: none;
+}
+
+tr.odd {
+	background-color: #F4F4F4;
+}
+
+tr.even {
+	background-color: #F9F9F9;
+}
+
+tr.surbrillance {
+	background-color: #AEF513;
+}
+
+tr.odd, tr.even, tr.surbrillance {
+	border-bottom: 1px solid #DDDDDD;
+}
+	
+tr.odd  td, tr.even td, tr.surbrillance td, tr.odd  input, tr.even input, tr.surbrillance input {
+	vertical-align: middle;
+}
+
+#creer_tri {
+	margin-top: 40px;
+}
+
+#creer_tri table {
+	width: 100%;
+}
+   
+#creer_tri input.bouton {
+	margin-top: 15px;
+}
+
+
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                                    RECHERCHE AVANCEE                                       */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */
+	
+#choose_criteria {
+	margin-top: 20px;
+	margin-bottom: 8px;
+}	
+	
+select[name='add_field'] {
+	margin-right: 5px;
+}
+
+.table-no-border {
+	width: 100%;
+	margin-top: 15px;
+}
+	
+.table-no-border tbody tr td .notice-parent {
+	background-image: none;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+	
+.table-no-border tbody tr td .notice-parent .notice-heada label {
+	font-size: 11pt;
+}
+	
+.table-no-border tbody tr td input[type='text-area'] {
+	height: 50px;
+}
+
+.search_critere {
+	width: 140px;
+	display: block;
+}	
+
+.search_value, .search_value select {
+	display: block;
+	float: left;
+	width: 250px;
+}
+
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                                  RECHERCHE PAR TERMES                                      */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */
+	
+form[name='term_search_form'] {
+	margin-top: 35px;
+}	
+	
+iframe.frame_term_search {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	margin-top: 15px;
+	border: 1px solid #CCCCCC !important;
+}	
+	
+
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                                 INTERROGATION EXTERNE                                      */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */
+   
+#external_simple_search_zone .row {
+	clear: both;
+}
+   
+#external_simple_search_zone .notice-child {
+	margin-top: 10px;
+}
+
+#external_simple_search_zone .notice-child input {
+	margin-bottom: 0px;
+}	
+	
+	
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                                        CATEGORIES                                          */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */
+
+/* ONGLETS : AFFICHAGE DE PLUSIEURS THESAURUS */   
+
+#categories ul.search_tabs {
+	margin: 0 0 20px 0;
+	padding-left: 0px;
+	list-style: none;
+}
+	
+#categories ul.search_tabs li {
+	display: inline-block;
+	width: auto;
+	float: left;
+	background-image: none;
+	padding-left: 0px;
+	cursor: pointer;
+	color: #555555;
+	vertical-align: middle;
+	padding: 4px 10px 4px 10px;
+	border: 1px solid #d9d9d9;
+	border-bottom-color: #bfbfbf;
+	-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+	line-height: 16px;
+	-moz-text-shadow: 0 1px 0 rgba(255,255,255,1.0);
+	-webkit-text-shadow: 0 1px 0 rgba(255,255,255,1.0);
+	text-shadow: 0 1px 0 rgba(255,255,255,1.0);
+	text-transform: uppercase;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-size: 13px;
+	margin-right: 5px;
+	margin-bottom: 20px;
+}
+	
+#categories ul.search_tabs li:hover {
+	border-color: #cfcfcf;
+	border-top-color: #BBBBBB;
+	border-bottom-color:#cfcfcf;
+	-moz-box-shadow: inset 0 1px 1px rgba(5,5,5,0.1);
+	-webkit-box-shadow: inset 0 1px 1px rgba(5,5,5,0.1);
+	box-shadow: inset 0 1px 1px rgba(5,5,5,0.1);
+}
+	
+#categories ul.search_tabs li#current {
+	cursor: default;
+}	
+	
+#categories ul.search_tabs li#current:hover {
+	border: 1px solid #d9d9d9;
+	border-bottom-color: #bfbfbf;
+	-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+}
+
+
+/* AFFICHAGE DES CATEGORIES EN PAGE D'ACCUEIL */
+
+#categories #categories-container .row_categ {
+	width: 100%;
+	clear: both;
+}
+	
+#categories #categories-container .row_categ .category {
+	display: block;
+	float: left;
+	width: 50%;
+	margin-bottom: 15px;
+}
+
+#categories #categories-container h2 {
+	font-size: 14pt;
+	font-weight: 700;
+	margin: 0 0 3px 0;
+}
+	
+#categories #categories-container h2 img {
+	display:none;}
+	
+#categories #categories-container ul {
+	font-size: 10pt;
+	list-style: none;
+}
+	
+#categories #categories-container ul li {
+	background-image: url("images/list.png");
+	background-repeat: no-repeat;
+	background-position: 0 -4px;
+	padding-left: 20px;
+}
+	
+/* NAVIGATION A L'INTERIEUR DES CATEGORIES */
+
+#aut_see table {
+	margin: 10px 0 30px 0;
+}
+	
+#aut_see table td {
+	padding-right: 20px;
+}
+
+
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                                      LOCALISATIONS                                         */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */
+
+#location h3 {
+	background-repeat: no-repeat;
+	background-image: url("images/localisation.jpg");
+	background-position: left top;
+	padding-top: 24px;
+}
+
+#location h3 span {
+	background-repeat: repeat-x;
+	background-image: url("images/span_localisation.jpg");
+	background-position: left top;
+	display: block;
+    padding-bottom: 12px;
+    padding-top: 5px;
+    margin-left: 45px;
+    text-align: center;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 660px;
+}
+
+#location-container {
+	border: 1px solid #5dffea;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#location-container table td {
+	text-align: center;
+}
+	
+table.loc_comment img {
+	vertical-align: top;
+	margin-top: -15px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}	
+
+
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                                 DERNIERES ACQUISITIONS                                     */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */
+   
+#last_entries {
+}
+
+
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                                         ETAGERES                                           */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */ 
+
+#etageres h3 {
+	background-repeat: no-repeat;
+	background-image: url("images/etageres.jpg");
+	background-position: left top;
+	padding-top: 12px;
+}
+
+#etageres h3 span {
+	background-repeat: repeat-x;
+	background-image: url("images/span_etageres.jpg");
+	background-position: left top;
+	display: block;
+    padding-bottom: 11px;
+    padding-top: 5px;
+    margin-left: 45px;
+    text-align: center;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 205px;
+}
+
+#etagere-container {
+	border: 1px solid #C81F76;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.etagere {
+	margin-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-repeat: no-repeat;
+	background-image: url("images/etagere.jpg");
+	background-position: left 30px;
+}
+	
+.etagere h1 {
+	height: 31px;
+	line-height: 30px;
+	background-image: url("images/titre_etagere.jpg");
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-left: 20px;
+	font-size: 14pt;
+	margin-left: -20px;
+	font-weight: 400;
+	-moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+}
+	
+.etagere h1 a {
+	color: #FFFFFF;
+	-moz-text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+	-webkit-text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+}
+	
+.etagere h2 {
+	font-size: 12pt;
+	font-style: italic;
+	float: right;
+	font-weight: 400;
+	color: #C81F76;
+	margin-bottom: 8px;
+	margin-top: 3px;
+	margin-right: 5px;
+}
+	
+a .etagere-suite {
+	display: inline-block;
+	margin-top: 15px;
+	cursor: pointer;
+	color: #555555;
+	vertical-align: middle;
+	padding: 4px 10px 4px 10px;
+	border: 1px solid #d9d9d9;
+	border-bottom-color: #bfbfbf;
+	-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+	line-height: 16px;
+	-moz-text-shadow: 0 1px 0 rgba(255,255,255,1.0);
+	-webkit-text-shadow: 0 1px 0 rgba(255,255,255,1.0);
+	text-shadow: 0 1px 0 rgba(255,255,255,1.0);
+	text-transform: uppercase;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-size: 11px;
+}
+	
+a:hover .etagere-suite {
+	border-color: #cfcfcf;
+	border-top-color: #BBBBBB;
+	box-shadow:inset 0 1px 1px rgba(5,5,5,0.1);
+}
+
+
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                                        VIGNETTES                                           */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */ 
+	
+img.vignetteimg {
+	margin-left: 20px;
+}
+
+
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                                 DOCUMENTS NUMERIQUES                                       */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */ 
+
+table.docnum td {
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+   
+table.docnum center {
+	text-align: left;
+	line-height: 110%;
+}
+	
+table.docnum a img {
+	margin-bottom: 5px;
+}
+
+
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                   TOOLTIPS - BULLES DE COMMENTAIRES SUR LES CATEGORIES                     */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */ 
+	
+.categmouseout {
+	position: absolute;
+	visibility: hidden;
+	z-index: 2000;
+}
+.categmouseover {
+	border: solid 1px #ccc;
+	background-color: #F9F9F9;
+	color: #555555;
+	font-size: 10pt;
+	position: absolute;
+	visibility: visible;
+	z-index: 2000;
+	margin-top: 2px;
+	width: 300px;
+	padding: 10px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+	-moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+}
+
+
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                                   BOUTONS ET FORMULAIRES                                   */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */ 
+
+input, select, textarea {
+	border: 1px solid #6186af;
+	border-radius: 10px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+	
+select {
+	padding-right: 1px;
+	-moz-border-radius-topright: 0px;
+	-moz-border-radius-bottomright: 0px;
+	-webkit-border-top-right-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+textarea {
+	padding-right: 1px;
+}
+
+input.bouton, input.boutonrechercher {
+	background-color: #3265ad;
+	background-image: url("images/btn.jpg");
+	background-repeat: repeat-x;
+	background-position: top left;
+	-moz-box-shadow: 1px 1px 1px #666666;
+	-webkit-box-shadow: 1px 1px 1px #666666;
+	box-shadow: 1px 1px 1px #666666;
+	color: #ffffff;
+	cursor: pointer;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+input.bouton:hover, input.boutonrechercher:hover {
+	-moz-text-shadow: 0px 0px 1px #ffffff;
+	-webkit-text-shadow: 0px 0px 1px #ffffff;
+	text-shadow: 0px 0px 1px #ffffff;
+	-moz-box-shadow: 1px 1px 1px #cccccc;
+	-webkit-box-shadow: 1px 1px 1px #cccccc;
+	box-shadow: 1px 1px 1px #cccccc;
+}	
+
+/* RECHERCHE */
+	
+#search form input[type='chexkbox'] {
+	margin-bottom: 5px;
+}
+
+#search label {
+	font-size: 10pt;
+}
+	
+/* BANDEAU */
+
+#lang_select select {
+	width: 100%;
+}
+
+#connexion #login_form form br {
+	display: none;
+}
+	
+#connexion #login_form b {
+	font-weight: 400;
+	display: block;
+	font-size: 15px;
+}
+
+#connexion #login_form a {
+	float: left;
+	margin-top: -20px;
+}
+
+#connexion label {
+	display: none;
+}
+
+#connexion input[type='password'],
+#connexion input[type='text'] {
+	width: 165px;
+	margin-bottom: 8px;
+}
+	
+#connexion input.bouton {
+	margin-bottom: 5px;
+	float: right;
+}
+
+#facette_list {
+	width: 100%;
+}
+
+
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                                COMPTE LECTEUR : CONNEXION                                  */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */ 
+
+#main_hors_footer #connexion {
+	border: none;
+	box-shadow: none;
+	padding: 0px;
+	margin: 0px;
+}
+   
+#main_hors_footer #connexion h3 {
+	display: none;
+}
+
+
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                         COMPTE LECTEUR : INSCRIPTION EN LIGNE                              */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */ 
+   
+#websubscribe h1 {
+	font-size: 22pt;
+	font-weight: 400;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+	
+#websubscribe table td h4 {
+	font-weight: 700;
+}
+	
+#websubscribe img {
+	margin: 10px 0px;
+}
+
+
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                               COMPTE LECTEUR : MON COMPTE                                  */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */ 
+   
+h2.moncompte {
+	font-size: 22pt;
+	font-weight: 400;
+	margin-top: 15px;
+	margin-bottom: 0px;
+}
+	
+ul.empr_tabs li#current {
+	border-color: #cfcfcf;
+	border-top-color: #BBBBBB;
+	-moz-box-shadow: 0px 0px 5px #cccccc inset;
+	-webkit-box-shadow: 0px 0px 5px #cccccc inset;
+	box-shadow: 0px 0px 5px #cccccc inset;
+}
+
+ul.empr_tabs li#current a {
+	color: #444444;
+}
+	
+ul.empr_subtabs {
+	margin-bottom: 30px;
+}
+
+
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                            COMPTE LECTEUR : MOT DE PASSE                                   */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */ 
+   
+#change-password table {
+	width: 100%;
+}
+   
+   
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                                 COMPTE LECTEUR : TITRES                                    */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */
+
+div#fiche-empr h3,
+div#change-password h3,
+div#empr-late h3,
+div#empr-all h3,
+div#empr-resa h3,
+div#empr-dsi h3,
+div#empr-sugg h3,
+div#empr-list h3,
+div#empr-dema h3 {
+	font-size:22pt;
+	font-weight:400;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+	
+	
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*    COMPTE LECTEUR : TABLEAUX MES PRETS, MES SUGGESTIONS, SUGGESTION MULTIPLES, DEMANDES    */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */
+
+#empr-dema table {
+	width: 100%;
+	margin-top: 15px;
+}
+   
+#empr-dema table th, #empr-sugg table th, #empr-late table.liste-expl-empr-all th, #empr-all table.liste-expl-empr-all th {
+	border-bottom: 1px solid #CCCCCC;
+	-moz-border-radius-bottomleft: 0px;
+	-moz-border-radius-bottomright: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}	
+
+#empr-dema table th, #empr-dema table td, #empr-sugg table th, #empr-sugg table td, #empr-late table.liste-expl-empr-all th, #empr-late table.liste-expl-empr-all td, #empr-all table.liste-expl-empr-all th, #empr-all table.liste-expl-empr-all td {
+	font-size: 10pt;
+}
+
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                               COMPTE LECTEUR : RESERVATIONS                                */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */
+	
+#empr-resa input.bouton {
+	margin-top: 10px;
+}
+
+
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                               COMPTE LECTEUR : SUGGESTIONS                                 */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */
+
+#make_sugg-container {
+	margin: 15px 0;
+}	
+
+
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                             COMPTE LECTEUR : LISTES DE LECTURE                             */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */
+
+form.form_liste_lecture input.bouton {
+	margin: 0 5px 10px 0;
+}
+
+  
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                            COMPTE LECTEUR : ALERTES - BANNETTES                            */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */
+
+.bannette-titre h1 {
+	font-size: 16pt;
+}
+
+.bannette-titre h1 a img {
+	margin-right: 8px;
+}
+
+#bannette-container table {
+	width: 100%;
+}
+
+#bannette-container table th {
+	background-color: #F7F7F7;
+	font-weight: 400;
+}
+
+#bannette-container input.bouton {
+	margin-top: 15px;
+}
+
+
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                                  COMPTE LECTEUR : DEMANDES                                 */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */
+
+#empr-dema .form-contenu label {
+	display: block;
+	width: 150px;
+	margin-top: 10px;
+	cursor: default;
+}
+	
+#empr-dema .form-contenu select, #empr-dema .form-contenu input#titre {
+	width: 200px;
+}
+
+#empr-dema .form-contenu textarea {
+	width: 400px;
+}
+
+
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                                  COMPTE LECTEUR : ONGLETS                                  */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */
+
+ul.empr_tabs {
+	list-style: none;
+}
+   
+ul.empr_tabs li {
+	display: inline-block;
+	float: left;
+	background-image: none;
+	cursor: pointer;
+	color: #555555;
+	vertical-align: middle;
+	padding: 4px 10px 4px 10px;
+	border: 1px solid #d9d9d9;
+	border-bottom-color: #bfbfbf;
+	-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+	line-height: 16px;
+	-moz-text-shadow: 0 1px 0 rgba(255,255,255,1.0);
+	-webkit-text-shadow: 0 1px 0 rgba(255,255,255,1.0);
+	text-shadow: 0 1px 0 rgba(255,255,255,1.0);
+	text-transform: uppercase;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-size: 10pt;
+	margin: 0 7px 7px 0;
+}
+	
+ul.empr_tabs li:hover {
+	border-color: #cfcfcf;
+	border-top-color: #BBBBBB;
+	border-bottom-color: #cfcfcf;
+	-moz-box-shadow: inset 0 1px 1px rgba(5,5,5,0.1);
+	-webkit-box-shadow: inset 0 1px 1px rgba(5,5,5,0.1);
+	box-shadow: inset 0 1px 1px rgba(5,5,5,0.1);
+}
+	
+#onglets_list ul.list_tabs li, ul.empr_subtabs li {
+	list-style: none;
+	padding-left: 20px;
+	background-image: url("images/list.png");
+	background-repeat: no-repeat;
+	background-position: 0px -7px;
+}
+	
+ul.empr_subtabs {
+	display: block;
+	clear: both;
+	padding-top: 20px;
+}
+
+
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                                          NOTICES                                           */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */
+
+/* CONTENU DES NOTICES */
+	
+#notice, .notice-child {
+	padding-bottom: 20px;
+}
+
+#notice h3, .notice-child h3 {
+	margin-top: 10px;
+}
+
+/* largeur de la colonne des libellés des champs */
+
+td.bg-grey {
+	width: 150px;
+	font-weight: 700;
+}
+
+/* on corrige la taille des titres */
+
+#notice h3, .parent h3, #search .notice-child h3, #categories .notice-child h3, #last_entries .notice-child h3, #location .notice-child h3, #etageres .notice-child h3, #empr-dsi .notice-child h3 {
+	font-size: 16px;
+	background-image: none;
+	margin-bottom: 5px;
+	color: #C81F76;
+	-webkit-text-shadow: 1px 1px 1px #CCCCCC;
+	-moz-text-shadow: 1px 1px 1px #CCCCCC;
+	text-shadow: 1px 1px 1px #CCCCCC;
+}
+
+#notice h3 span, .parent h3 span, #search .notice-child h3 span, #categories .notice-child h3 span, #last_entries .notice-child h3 span, #location .notice-child h3 span, #etageres .notice-child h3 span, #empr-dsi .notice-child h3 span {
+	background-image: none;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	width: auto;
+	text-align: left;
+	display: inline;
+}
+	
+/* ENTETE DES NOTICES */
+
+.notice-parent {
+	padding-top: 10px;
+	margin-top: 10px;
+	border-top: 1px dashed #C81F76;
+}
+
+/* on annule le style qui s'applique aussi au cases à cocher de la recherche simple */	
+	
+#simple_search_zone .notice-parent {
+	background-image: none;
+	padding-top: 0px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	border: none;
+}
+
+.parent .notice-heada {
+	line-height: 120%;
+	font-size: 18pt;
+}	
+
+.parent .header_title {
+	font-size: 18pt;
+	padding-left: 10px;
+	line-height: 120%;
+}
+	
+/* on aligne les images des liens et docs numériques sur le titre */
+
+.notice-parent img {
+	margin-right: 5px;
+	vertical-align: bottom;
+}
+
+.notice-parent span a img, .notice-child ul li a img {
+	vertical-align: baseline;
+}
+	
+/* on réduit la taille de la police pour le contenu des notices */
+	
+#notice, #notice table td, .notice-child, .notice-child table td, .parent table td, .parent .notice-heada, .parent .header_title {
+	font-size: 10pt;
+}
+
+#notice .parent .notice-heada , #notice .parent .header_title {
+	font-size: 18pt;
+}
+
+.parent .header_title {
+	padding-left: 0px;
+}
+
+#notice .parent .header_title {
+	padding-left: 10px;
+}
+
+#etagere-notice-list {
+	clear: both;
+}
+
+#etagere-notice-list a .header_title {
+	background-image: url("images/list.png");
+	background-repeat: no-repeat;
+	background-position: 0px -5px;
+	padding-left: 20px;
+}
+
+.parent table {
+	margin-bottom: 20px;
+}
+
+.parent table table {
+	margin-bottom: 0px;
+}
+
+
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                          BOUTONS DE PARTAGE SUR LES RESEAUX SOCIAUX                        */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */
+
+.addthis_toolbox {
+	margin-top: 15px;
+}
+
+
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                          ONGLETS ISBD, PUBLIC, PANIER, MOTS CLES...                        */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */
+
+ul.onglets_isbd_public {
+	margin: 5px 0 15px 0;
+	padding: 5px 0 5px 0;
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+	font-size: 10pt;
+}
+	
+#resultatrech_liste ul.onglets_isbd_public li, ul.onglets_isbd_public li {
+	padding: 0 10px 0 6px;
+	background-image: none;
+	display: inline;
+	border-right: 1px solid #dddddd;
+}
+
+ul.onglets_isbd_public li.isbd_public_active a {
+	color: #1C6AB4;
+}
+
+ul.onglets_isbd_public li.onglet_tags {
+	border-right: none;
+	padding-right: 0px;
+}
+	
+ul.onglets_isbd_public li.onglet_tags a {
+	padding: 0 10px 0 0;
+}
+	
+ul.onglets_isbd_public li.onglet_tags img {
+	margin-right: 0px;
+}
+
+
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                                       EXEMPLAIRES                                          */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */
+
+table.exemplaires td, table.exemplaires th {
+	border: 1px solid #CCCCCC;
+	padding-left: 5px;
+	font-size: 10pt;
+}
+
+table.exemplaires th {
+	background-color: #F5F5F5;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                                          POP-UP                                            */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */
+
+#print_options, #make_sugg {
+	margin-left: 20px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	box-shadow: 1px 1px 3px #cccccc;
+}
+
+#print_options b {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	background-color: #FF8D22;
+}
+
+#print_options blockquote {
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+
+#make_sugg .row {
+	margin-top: 15px;
+}
+
+
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */  
+/*                             SURLIGNAGE DES MOTS RECHERCHES                                 */
+/*------------------------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------ */
+   
+.text_search0, .text_search1, .text_search2, .text_search3, .text_search4, .text_search5 {
+	background-color: #AEF513;
+}
+
+

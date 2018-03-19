@@ -1,0 +1,48 @@
+<h3>Vos recherches peuvent porter sur l'ensemble de la documentation du D&eacute;fenseur des droits ou bien sur l'ensemble de l'Espace juridique (textes du portail compris).</h3>
+<br />
+<h3>Un moteur de recherche vous permet d'effectuer soit une <a href="#simple">Recherche simple</a>, soit une <a href="#avancee">Recherche avanc&eacute;e</a>.</h3>
+<br />
+<h4>Toutes les recherches</h4>
+Dans tous les cas, le moteur recherche les &eacute;l&eacute;ments qui <b>contiennent au moins un des mots saisis</b>. Le tri se fait par pertinence, selon le nombre d&eacute;croissant de mots trouv&eacute;s, puis par ordre alphab&eacute;tique. <br />
+Les <b>caract&egrave;res accentu&eacute;s</b>, la <b>ponctuation</b> et les <b>majuscules/minuscules</b> sont <b>ignor&eacute;s</b> lors de la recherche (&eacute;, &egrave;, &agrave;, &ccedil;, !, ', etc.).<br />
+Ex. <b>travailleur handicap&eacute;</b> visera les &eacute;l&eacute;ments qui contiennent le mot '<b>travailleur</b>' ou le mot '<b>handicap&eacute;</b>' (travailleur social, &eacute;tudiant handicap&eacute;, ...).
+<ul>
+   <li>Pour rechercher 'travailleur handicap&eacute;', cette expression devra &ecirc;tre mise entre guillemets : <b>"travailleur handicap&eacute;"</b>.</li>
+</ul>
+<br />
+<h4 id="simple">La recherche simple</h4>
+<br />
+Saisissez <b>un ou plusieurs termes</b>, <b>des noms communs comme des noms propres</b>, puis cliquez sur <b><i>Rechercher</i></b>. <br />
+<br />
+Sous cette rubrique, le moteur va chercher les termes <b>dans tous les &eacute;l&eacute;ments</b> d'un document : titres, auteurs, r&eacute;sum&eacute;s, les mots cl&eacute;s...<br />
+Vous pouvez en outre <b>vous aider de signes</b> afin de rendre votre recherche plus efficace.<br />
+<ul>
+   <li><b>1.</b> La <b>troncature *</b> remplace un ou plusieurs caract&egrave;res, notamment pour chercher un terme en m&ecirc;me temps au singulier comme au pluriel ou au masculin comme au f&eacute;minin.<br />
+   Les mots peuvent &ecirc;tre tronqu&eacute;s &agrave; gauche, droite ou partiellement par le caract&egrave;re <b>*</b>. Plusieurs troncatures peuvent &ecirc;tre utilis&eacute;es dans un m&ecirc;me mot. <br />
+   Ex. <b><em>chev*</em></b> cherchera les mots commen&ccedil;ant par <em>chev</em> (cheval, chevaux, cheveux, ...), <b><em>*logie</em></b> cherchera les mots finissant par 'logie' (psychologie, th&eacute;ologie, trilogie, ...), <b><em>p*logie</em></b> cherchera les mots commen&ccedil;ant par 'p' et finissant par 'logie' (psychologie, pal&eacute;onthologie, pathologie, ...). <br />
+   </li>
+   <li><b>2.</b> Les <b>guillemets</b> permettent de rechercher des <b>termes exacts</b>, comme <b>deux mots qui se suivent</b> ou des <b>expressions</b>. <br />
+   Si le moteur de recherche rencontre un texte entre guillemets, il cherche les &eacute;l&eacute;ments contenant exactement ce texte. <br />
+   Ex. <b><em>lanceur d'alerte</em></b> cherchera &agrave; la fois <b>'lanceur'</b> ou <b>'alerte'</b> alors que <b>"lanceur d'alerte" cherchera l'expression exacte</b>.<br />
+   </li>
+</ul>
+<br />
+<h4 id="avancee">La recherche avanc&eacute;e</h4>
+<br />
+Nous vous proposons un formulaire afin de faciliter vos recherches complexes. La <b>recherche avanc&eacute;e</b> permet de chercher sur certains types de param&egrave;tres (titre, auteur, mots cl&eacute;s, num&eacute;ro de d&eacute;cision, etc) et de cumuler les param&egrave;tres entre eux pour r&eacute;aliser, en m&ecirc;me temps, une recherche pr&eacute;cise.<br />
+Pour lancer une <b>recherche avanc&eacute;e</b> :
+<ul>
+   <li>pour chaque <b>param&egrave;tre</b>, comme par exemple le <b>Titre</b>, vous pouvez choisir entre <b>'contient', 'commence par', 'fini par' ou 'exactement comme'</b>. Ce choix peut varier selon le param&egrave;tre concern&eacute;.</li>
+   <li>puis, vous pouvez saisir une valeur (un mot, le num&eacute;ro d'une d&eacute;cision ou une date) dans la case de saisie correspondante ; </li>
+   <li>dans le cas du param&egrave;tre <b>Mots-cl&eacute;s</b>, en saisissant les premi&egrave;res lettres du mot recherch&eacute; le moteur vous propose plusieurs possibilit&eacute;s. Vous pouvez &eacute;galement choisir entre une ou plusieurs propositions en cliquant sur <b><em>l'ic&ocirc;ne livre</em></b> &agrave; la droite de la case du param&egrave;tre. Vous pouvez ajouter autant de mots-cl&eacute;s que n&eacute;cessaire en cliquant sur le bouton '+' et ainsi effectuer par exemple une recherche sur la <b>'Discrimination'</b> dans <b>l' 'Emploi priv&eacute;'</b> selon le crit&egrave;re de <b>l' 'Age'</b>.</li>
+   <li>enfin validez en cliquant sur Rechercher.</li>
+</ul>
+<p>Le formulaire de recherche avanc&eacute;e vous permet de <b>combiner les param&egrave;tres</b> au moyen des liens logiques <b>ET, OU, SAUF</b></p>
+<ul>
+   <li>Le lien <b>ET</b> &eacute;quivaut &agrave; un +<br />
+   Ex. <b>fracture + num&eacute;rique</b> signifie les &eacute;l&eacute;ments qui contiennent les mots 'fracture' <b>et</b> 'num&eacute;rique'.</li>
+   <li>Le lien <b>OU</b><br />
+   Ex. <b>fracture ou num&eacute;rique</b> signifie les &eacute;l&eacute;ments qui contiennent le mot 'fracture' et les &eacute;l&eacute;ments qui contiennent le mot 'num&eacute;rique'.</li>
+   <li>Le lien <b>SAUF</b> &eacute;quivaut &agrave; un moins -<br />
+   Ex. <b>fracture - num&eacute;rique</b> signifie les &eacute;l&eacute;ments qui contiennent le mot 'fracture', <b>sauf ceux qui contiennent aussi le mot 'num&eacute;rique'</b>.</li>
+</ul>

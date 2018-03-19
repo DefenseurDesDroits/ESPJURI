@@ -1,0 +1,185 @@
+_@charset "utf-8";
+/* Affichage de notices reduites 
+========================================================================== */
+
+.notice_corps,
+#resa_notice {
+}
+
+#resa_notice a:before {
+}
+
+.panier_avis_notCourte {
+}
+
+.onglet_basketNotCourte .img_basketNotCourte {
+}
+
+.onglet_basketNotCourte .img_basketNotCourte img,
+.onglet_basketNot .img_basketNot img {background-color: #78a9da;}
+
+span.imgComment,
+span.imgStatutPartN {
+}
+
+.dispoLien_notice a {
+}
+
+.notice_dispo {
+}
+
+#notice {
+}
+
+#notice>span>br {
+}
+
+#blocNotice_descr ul.onglets_isbd_publicNot li {
+}
+
+#blocNotice_descr ul.onglets_isbd_publicNot .isbd_public_active a {
+}
+
+#blocNotice_descr ul.onglets_isbd_publicNot li:hover {
+}
+
+#blocNotice_descr ul.onglets_isbd_publicNot li>a {
+}
+
+.asideContentNot {
+}
+
+.notice_contenu {
+}
+
+.unavalable {
+}
+
+.onglet_basketNotCourte,
+.statutPartN,
+#resa_notice,
+.dispoLien_notice,
+.onglet_basketNot{
+	
+}
+span.imgComment, 
+span.imgStatutPartN, 
+span.imgDocNum {background-color: #78a9da;}
+
+#resa_notice {
+}
+
+.avisNCourte {
+}
+
+.avisNCourte a {
+}
+
+#resa_notice i.fa,
+.dispoLien_notice i.fa {
+}
+
+#resa_notice i.fa,
+.dispoLien_notice i.fa {
+}
+
+.notice_nonDispo i.fa {
+}
+
+.notice_deRetour i.fa {
+}
+
+.NoticeRed {
+}
+
+.NoticeRed+.NoticeRed {
+}
+
+.typeDoc_notCourte {
+}
+/*Taille de l image
+========================================================================== */
+
+.parentNot .vignetteDocNot {
+}
+
+.parentNot .vignetteNot {
+  ;
+}
+
+#resultatrech_liste blockquote {
+}
+
+#resa_notice a,
+.notice_dispo {
+}
+
+.vignetteNot {
+}
+
+.vignetteDocNot {
+}
+/*Check box
+========================================================================== */
+.notcheckbox {
+}
+/*Fiche complet
+========================================================================== */
+#noticeNot {
+}
+
+#blocNotice_descr ul.onglets_isbd_publicNot .isbd_public_active a span,
+#blocNotice_descr ul.onglets_isbd_publicNot li:hover a span {
+}
+
+.onglet_basketNot .img_basketNot img {
+}
+
+.onglet_basketNot .img_basketNot {
+}
+
+.descr_notice td {
+}
+/*Flex display                        
+--------------------------------------------------------------------------------------------*/
+div[class='onglet_basketNotCourte'],
+div[class='avisNCourte'],
+div[class='tagsNCourte'],
+div[class='listeLectureNCourte'] a,
+div[class='suggestNCourte'],
+div[class='onglet_basketNot'] a.img_basketNot,
+div[class='tagsN'],
+div[class='suggestN'],
+div[class='docnumNCourte docnumNCourtePermalink'],
+div[class='docnumNCourte'],
+div[class='listeLectureN'] a{
+	background-color: #78a9da;
+}
+/*Sans uikit
+========================================================================== */
+/*
+.onglet_basketNotCourte,
+.avisNCourte,
+.panier_avis_notCourte>div {
+	float: left;
+	width: 30%;
+	margin-right: 1.5%;
+}
+.panier_avis_notCourte:after{
+	content:"";
+	display:block;
+	clear: both;
+	float:none;
+}
+*/
+/*Responsive
+========================================================================== */
+
+@media screen and (max-width: 767px) {
+  .panier_avis_notCourte>div>div.onglet_basketNotCourte,
+    .panier_avis_notCourte>div>div.avisNCourte {
+  }
+
+  .parentNot .vignetteNot {
+  }
+}

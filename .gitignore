@@ -1,6 +1,9 @@
 pmb_documents_numeriques/*
 db_param.inc.php
 opac_db_param.inc.php
+*.tar
+*.tar.*
+*.gzip
 
 ### WINDOWS
 

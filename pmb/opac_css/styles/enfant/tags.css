@@ -1,0 +1,46 @@
+/* +--------------------------------------------------------------------------+
+// © 2002-2004 PMB Services / www.sigb.net pmb@sigb.net et contributeurs (voir www.sigb.net)
+// +-------------------------------------------------+
+// $Id: tags.css,v 1.1 2012-03-15 13:46:38 trenon Exp $
+*/
+
+/*
+liens des tags : 4 tailles en fct de leur fréquence
+*/
+
+a.TagF1 	{
+	font-size:10pt;
+	font-weight:400;
+	color:#327382;
+}
+a.TagF2 	{
+	font-size:13pt;
+	font-weight:400;
+	color:#3E8EA0;
+}
+a.TagF3 	{
+	font-size:16pt;
+	font-weight:700;
+	color:#47A3B7;
+}
+a.TagF4 	{
+	font-size:19pt;
+	font-weight:700;
+	color:#55C3DC;
+}
+
+a.TagF1,
+a.TagF2,
+a.TagF3,
+a.TagF4{
+	text-decoration:none;}
+
+a.TagF1:hover,
+a.TagF2:hover,
+a.TagF3:hover,
+a.TagF4:hover{
+	color:#CE432F;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}

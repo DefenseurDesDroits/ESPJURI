@@ -1,0 +1,27 @@
+<?php
+// +-------------------------------------------------+
+// © 2002-2004 PMB Services / www.sigb.net pmb@sigb.net et contributeurs (voir www.sigb.net)
+// +-------------------------------------------------+
+// $Id: external_admin_auth.inc.php dbellamy Exp $
+//
+// Défenseur des droits
+// V1 (DB-06/10/2016)
+// +-------------------------------------------------+
+
+if (stristr($_SERVER['REQUEST_URI'], ".inc.php")) die("no access");
+
+require_once("$include_path/ldap_ddd.inc.php");
+//require_once("$class_path/log.class.php");
+//log::$log_now = true;
+//log::$log_format='txt';
+//log::$log_file="/home/pmb/www/pmb/temp/debug_auth.txt";
+
+//valid_user=1 si OK, 0 sinon
+$valid_user = 0;
+
+
+$lq = new ldap_query_ddd();
+//$lq->log = true;
+if ($lq->authenticate_user($user,$password)) {
+	$valid_user	= 1;
+}

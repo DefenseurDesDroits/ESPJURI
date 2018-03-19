@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!DOCTYPE XMLlist SYSTEM "../../XMLlist.dtd">
+
+<!-- liste des types de documents en UNIMARC (français)
+$Id: doctype.xml,v 1.1 2004-06-09 08:09:10 touraine37 Exp $ -->
+
+<XMLlist>
+	<entry code="a">Textes officiels</entry>
+	<entry code="b">Décisions</entry>
+	<entry code="m">Règlements amiables</entry>
+	<entry code="n">Avis au parlement</entry>
+	<entry code="o">Propositions de réforme</entry>
+	<entry code="l">Rapports et études</entry>
+	<entry code="c">Jurisprudences</entry>
+	<entry code="d">Ouvrages</entry>
+	<entry code="e">Thèses et mémoires</entry>
+	<entry code="i">Articles</entry>
+	<entry code="p">Périodiques et revues</entry>
+	<entry code="j">Guides et brochures</entry>
+	<entry code="k">Multimédia</entry>
+	<entry code="q">Colloques et évènements</entry>
+	
+	<entry code="f"></entry>
+	<entry code="g"></entry>
+	<entry code="r"></entry>
+	
+</XMLlist>

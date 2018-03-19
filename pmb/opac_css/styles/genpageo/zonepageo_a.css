@@ -1,0 +1,39 @@
+ /* +--------------------------------------------------------------------------+
+// 2013 PMB Services / www.sigb.net pmb@sigb.net et contributeurs (voir www.sigb.net)
+// +-------------------------------------------------+
+// $Id: zonepageo_a.css,v 1.1 2014-10-10 10:21:13 wlair Exp $ */
+
+/*------------------------------------------------------------------------------------------*/
+
+#container {
+	margin: 0 auto;
+	width: 1024px;
+	position: relative;
+}
+#intro{
+
+}
+#main{
+	width: 70%!important;
+    padding: 0px 0px 0px 0px!important;
+	margin: 0px!important;
+	margin-left:17%!important;
+   	box-sizing: border-box;
+	visibility: visible;
+	display: block;
+	left: auto!important;
+	top: auto!important;
+	float: none!important;
+	position: static!important;
+}
+#bandeau{
+    width: 25%!important;
+    padding: 0px 0px 0px 0px!important;
+    margin: 0px 0px 0px 0px!important;
+    box-sizing: border-box;
+    float: left!important;
+    margin-left: 2%!important;
+}
+#bandeau_2{
+
+}

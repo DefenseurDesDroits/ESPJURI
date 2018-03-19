@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE XMLlist SYSTEM "../XMLlist.dtd" [<!ENTITY nbsp "&amp;nbsp;">]>
+
+<!-- messages localisés en français pour PMB
+****************************************************************************************
+© 2002-2004 PMB Services / www.sigb.net pmb@sigb.net et contributeurs (voir www.sigb.net)
+****************************************************************************************
+$Id: fr_FR.xml,v 1.1339.2.97 2017-03-08 15:54:10 jpermanne Exp $ -->
+
+<XMLlist>
+<entry code="231">Numéro de décision ou d'affaire</entry>
+<entry code="255"><![CDATA[Numéro de décision ou d'affaire (facultatif)]]></entry>
+<entry code="272">Saisissez ici Numéro de décision ou d'affaire, l'EAN (code-barres commercial) ou le numéro commercial du document à cataloguer. Si vous ne disposez pas de cette information, Cliquez sur le bouton [suite] ou appuyez sur la touche entrée.</entry>
+<entry code="543">Notice : Numéro de décision ou d'affaire vide</entry>
+<entry code="940">No. d'exemplaire, Numéro de décision ou d'affaire, numéro commercial</entry>
+<entry code="isbn_query">Numéro de décision ou d'affaire, ISSN ou EAN</entry>
+</XMLlist>

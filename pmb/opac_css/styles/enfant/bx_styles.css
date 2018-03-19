@@ -1,0 +1,169 @@
+/* @override http://localhost/bxslider_v3_plugin/css/styles.css */
+
+/*
+ * To change the color scheme of slider change each 
+ * background property for each of the five styles below
+ */
+
+/*next button*/
+.bx-next {
+	position: absolute;
+	z-index: 999;
+	width: 40px;
+	height: 205px;
+	right: 0px;
+	top: 0px;
+	background-image: url("images/next.png");
+	background-repeat: no-repeat;
+	background-position: 0 0px;
+}
+
+.bx-next:hover {
+	background-image: url("images/next_hover.png");
+}
+
+/*previous button*/
+.bx-prev {
+	position:absolute;
+	z-index:999;
+	width: 40px;
+	height: 205px;
+	top: 0px;
+	left: 0px;
+	background-image: url("images/prev.png");
+	background-repeat: no-repeat;
+	background-position: 0 0px;
+}
+
+.bx-prev:hover {
+	background-image: url("images/prev_hover.png");
+}
+
+
+/*pager wrapper*/
+.bx-pager {
+	text-align:center;
+	padding-top: 7px;
+	font-size:12px;
+	color:#666;
+}
+
+/*captions*/
+.bx-captions {
+	text-align:center;
+	font-size: 12px;
+	padding: 7px 0;
+	color: #666;
+}
+
+/*auto controls*/
+.bx-auto {
+	text-align: center;
+	padding-top: 15px;
+}
+
+.bx-auto a {
+	color: #666;
+	font-size: 12px;
+}
+
+#infopage_carrousel {
+	position: relative;
+	background-image: url("images/carrousel_top.jpg");
+	background-repeat: no-repeat;
+	background-position: right 10px;
+	margin-top: 15px;
+}
+
+#infopage_carrousel h3 {
+	background-repeat: no-repeat;
+	background-image: url("images/livre.png");
+	background-position: left top;
+	padding-top: 10px;
+}
+
+#infopage_carrousel span {
+	background-repeat: repeat-x;
+	background-image: url("images/span_nouveautes.jpg");
+	background-position: left top;
+	display: block;
+    padding-bottom: 11px;
+    padding-top: 5px;
+    margin-left: 45px;
+    text-align: center;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 140px;
+}
+
+#infopage_carrousel #plus_ouvrages {
+	position: absolute;
+	right: 0px;
+	bottom: -20px;
+	background-image: url("images/carrousel_notices_plus.jpg");
+	background-repeat: no-repeat;
+	background-position: top left;
+	display: block;
+	padding-bottom: 5px;
+	width: 250px;
+	text-align: center;
+	color: #ffffff;
+	font-weight: bold;
+	-moz-text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+	-webkit-text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+}
+
+#infopage_carrousel .bx-window {
+	width: inherit !important;
+}
+
+#infopage_carrousel .bx-wrapper {
+	width: inherit !important;
+	background-repeat: repeat-x;
+	background-image: url("images/carrousel.jpg");
+	background-position: left top;
+	background-color: #D7FF8F;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	-webkit-border-left-top-radius: 10px;
+	-webkit-border-right-top-radius: 10px;
+	border-left-top-radius: 10px;
+	border-right-top-radius: 10px;
+	border-top: 2px solid #b7fb13;
+	border-bottom: 2px solid #b7fb13;
+	height: 206px;
+}
+
+#infopage_carrousel ul {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#infopage_carrousel ul li {
+	width: 235px !important;
+}
+
+#infopage_carrousel ul li a {
+	display: block;
+	width: 150px;
+	margin: 0 auto;
+	text-align: center;
+	text-decoration: none;
+}
+
+#infopage_carrousel ul li a img {
+	height: 145px;
+	background-repeat: no-repeat;
+	background-image: url("images/no_image.jpg");
+	-moz-box-shadow: 1px 1px 2px #306264;
+    -o-box-shadow: 1px 1px 2px #306264;
+    -webkit-box-shadow: 1px 1px 2px #306264;
+    box-shadow: 1px 1px 2px #306264;
+}
+
+

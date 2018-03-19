@@ -1,0 +1,52 @@
+<?php
+// +-------------------------------------------------+
+// @ 2002-2004 PMB Services / www.sigb.net pmb@sigb.net et contributeurs (voir www.sigb.net)
+// +-------------------------------------------------+
+// $Id: ext_auth.inc.php dbellamy Exp $
+//
+// Défenseur des droits
+// V1 (DB-06/10/2016)
+// +-------------------------------------------------+
+
+if (stristr($_SERVER['REQUEST_URI'], ".inc.php")) die("no access");
+
+
+if (!$_SESSION['user_code'] && $_POST['login'] && $_POST['password'] && !$_GET['logout']) {
+
+	$ext_auth = false;
+	$empty_pwd = false;
+	$logged_w_ldap = false;
+
+	//require_once($class_path.'/log.class.php');
+	require_once($base_path.'/includes/empr_func.inc.php');
+	require_once($include_path."/ldap_ddd.inc.php");
+
+	//log::$log_now = true;
+	//log::$log_format='txt';
+	//log::$log_file="/home/pmb/www/pmb/opac_css/temp/debug_auth.txt";
+	//log::print_message('========================');
+	//log::print_message($_POST);
+	
+	$lq = new ldap_query_ddd();
+	//$lq->log = true;
+	
+	$logged_wldap = $lq->authenticate_empr($_POST['login'], $_POST['password']);
+
+	// On verifie que le lecteur existe dans PMB
+	if ($logged_wldap) {
+		$q="select id_empr,empr_cb from empr where empr_login='".addslashes($_POST['login'])."'";
+		$r = pmb_mysql_query($q,$dbh);
+		$n = pmb_mysql_num_rows($r);
+		if($n==1) {
+			$ext_auth=true;
+			$empty_pwd=true;
+		}
+	}
+
+	if ($ext_auth==true) {
+		$log_ok=connexion_empr();
+		pmb_mysql_close($dbh);
+		header('Refresh: 0;');
+		exit();
+	}
+}
